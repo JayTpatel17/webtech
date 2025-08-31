@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Shoes-Online Shopping</title>
+    <link rel="shortcut icon" href="/Images/MyWebLogo.avif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b9b8b8;
+        }
+        header {
+            background-color: #e14d4d;
+            color: #000000;
+            padding: 10px 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #353131;
+            padding: 15px;
+            display: flex;
+           justify-content: center; 
+            align-items: center;
+            font-size: large;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #4fd86d;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: rgb(239, 221, 120);
+            border: 1px solid #554f4f;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-card:hover{
+            box-shadow: 2px 2px 8px 4px black;
+        }
+        .product-card img {
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: rgb(19, 17, 17);
+            margin: 5px 0 10px;
+        }
+        .product-card .price {
+            color: #1a1718;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .product-card button {
+            background-color: rgb(128, 228, 39);
+            color: rgb(0, 0, 0);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background-color: #43dad5;
+        }
+        footer {
+            background-color: #0f0f0f;
+            color: rgb(220, 214, 214);
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Men's Shoes - Shop the Latest Collection</h1>
+</header>
+
+<nav>
+    <a href="./MyProject.html">Home</a>
+    <a href="./MenShoes1.html">Men's Shoes</a>
+    <a href="./KidsShoe.html">Kid's Shoes</a>
+    <a href="./MyProject.html#contact">Contact</a>
+    <a href="./AddtoCart.html"> Cart</a>
+    <i class="fa-solid fa-cart-shopping" style="color: white;" target="blank"></i>
+</nav>
+
+<div class="container">
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="./WEB Images/Ms1.webp" alt="Shoe 1">
+            <h3>Running Shoes</h3>
+            <p>Lightweight and comfortable.</p>
+            <p class="price">500₹</p>
+            <!-- <a href="#" data-toggle="modal" data-target="#myModal1234"><button>Add To Cart</button></a><br><br> -->
+            <a href="./AddtoCart.html" onclick="addToCart('Product 1', 500)"><button>Add to Cart</button></a>
+            <!-- <button onclick="addToCart('Product 1', 500)">Add to Cart</button> -->
+            <!-- <button class="add-to-cart" onclick="addToCart()">Add to Cart</button> -->
+        </div>
+        <div class="product-card">
+            <img src="./WEB Images/Mshoes3.jpeg" alt="Shoe 2">
+            <h3>Sports Shoes</h3>
+            <p>Run faster, feel lighter!</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+            
+        </div>
+        <div class="product-card">
+            <img src="./WEB Images/Mshoes2.jpg" alt="Shoe 3">
+            <h3>Casual Sneakers</h3>
+            <p>"Everyday style, ultimate comfort!"</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+        </div>
+        <div class="product-card">
+            <img src="./WEB Images/Mshoes1.jpg" alt="Shoe 4">
+            <h3>Formal Shoes</h3>
+            <p>High performance for athletes.</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="./WEB Images/Ms4.webp" alt="Shoe 1">
+            <h3>Marrige Shoes</h3>
+            <p> "Step into your special day in style!"</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>           
+        </div>
+        <div class="product-card">
+            <img src="./WEB Images/Ms5.webp" alt="Shoe 1">
+            <h3>Men Shoes</h3>
+            <p> Perfect Blend of Comfort and Style</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+        
+        </div>
+        <div class="product-card">
+            <img src="./WEB Images/MS6.webp" alt="Shoe 1">
+            <h3>Party Shoes</h3>
+            <p>party shoes Trendy and stylish. "Shine at every event!"</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+        </div>
+        <div class="product-card">
+            <img src="./WEB Images/Ms7.jpg" alt="Shoe 1">
+            <h3>Formal Shoes</h3>
+            <p>Perfect for office wear.</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="./WEB Images/Ms8.jpeg" alt="Shoe 1">
+            <h3>RED Shoes</h3>
+            <p> "Stand out, step bold!"</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+        </div>
+        <div class="product-card">
+            <img src="./WEB Images/Ms9.jpeg" alt="Shoe 1">
+            <h3>Lofers Shoes</h3>
+            <p>"Casual sophistication redefined!"</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+        </div>
+        <div class="product-card">
+            <img src="./WEB Images/Ms10.jpeg" alt="Shoe 1">
+            <h3>Derbies shoes</h3>
+            <p>"Classic charm, timeless style!"</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+        </div>
+        <div class="product-card">
+            <img src="./WEB Images/Ms12.jpeg" alt="Shoe 1">
+            <h3>Stylies Shoes</h3>
+            <p> "Make every step fashionable!"</p>
+            <p class="price">500₹</p>
+            <a href="./AddtoCart.html"><button>Add to Cart</button></a>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2024 Men's Shoes Store. All Rights Reserved.</p>
+</footer>
+
+
+<!-- <script>
+    let cart = [];
+    let totalAmount = 0;
+
+    function addToCart(productName, productPrice) {
+        cart.push({ name: productName, price: productPrice });
+        totalAmount += productPrice;
+        updateCartUI();
+    }
+
+    function updateCartUI() {
+        const cartItemsContainer = document.getElementById('cart-items');
+        cartItemsContainer.innerHTML = '';
+
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - ₹${item.price}`;
+            cartItemsContainer.appendChild(li);
+        });
+
+        document.getElementById('cart-total').textContent = `Total: $${totalAmount}`;
+    }
+</script> -->
+
+</body>
+</html>

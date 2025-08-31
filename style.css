@@ -1,0 +1,486 @@
+ *{               /*  Page 1 ===universal selector */
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+
+}
+.navbar a{
+    position: relative;
+    left: 20px;
+    padding-left: 40px;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.home{
+    height: 95vh;
+    width: 100%;
+    background-color: salmon;
+}
+.home img{
+    filter: blur(2px);
+}
+.home #head{
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 170px;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 0 5px 8px red;
+}
+.home .icons{
+    color: aliceblue;
+    position: absolute;
+    top: 510px;
+    left:540px ;
+   
+}
+.home .icons i{
+    margin-left: 70px;
+    font-size: 40px;
+}
+.home .icons i:nth-child(1){
+    color: crimson;
+    font-weight: 500;
+} 
+.home .icons i:nth-child(1):hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+    filter: drop-shadow(2px 4px 6px crimson);
+}
+.home .icons i:nth-child(2){
+    color: rgb(13, 59, 197);
+    font-weight: 500;
+}
+.home .icons i:nth-child(2):hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+    filter: drop-shadow(2px 4px 6px rgb(13, 59, 197));
+}
+.home .icons i:nth-child(3){
+    color: rgb(20, 220, 20);
+    font-weight: 500;
+}
+.home .icons i:nth-child(3):hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+    filter: drop-shadow(2px 4px 6px rgb(20, 220, 20));
+}
+
+                      /* ///Part-2 */
+.about{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(136, 112, 110);
+}
+.about .content{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .content h1{
+    font-size: 50px;
+}
+.about .sub-about{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.about .sub-about .contentBox{
+    width: 900px;
+}
+.about .sub-about .contentBox p{
+    text-indent: 100px;
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.about .sub-about .contentBox h2{
+    text-align: right;
+    padding-top: 20px;
+    color: rgb(83, 7, 7);
+}
+
+                   /* =====Part---3===== */
+
+.about2{
+    height: 98vh;
+    width: 100%;
+    background-color: rosybrown;
+}
+
+.about2 .head{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.about2 .head h1{
+    font-size: 40px;
+}
+
+.about2 .cars{
+    height: 85vh;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+}
+
+.cars .child img{
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+    border: 5px solid ;
+}
+
+.cars .child h1{
+    position: relative;
+    left: 70px;
+    font-size: 20px;
+    color: white;
+
+}
+.cars{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 35px;
+}
+
+.cars .child img{
+    height: 200px;
+    width: 250px;
+    border-radius: 20px;
+    border: 5px solid yellow;
+}
+
+        /* ------======+++++  part - 4  +++++===----  */
+
+.services{
+    height: 100vh;
+    width: 100%;
+    /* background-color: plum; */
+}
+
+.services .heading{
+    background-color: white;
+    height: 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .heading h1{
+    font-size: 40px;
+    
+}
+.services .cards{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.services .cards .card{
+    background-color: rgb(171, 189, 205);
+    border-radius: 10px;
+    height: 460px;
+    width: 360px;
+    border: 2px solid black;
+    padding: 10px;
+    border: none;
+}
+
+.services .cards .card:hover{
+    transform: translateY(-20px);
+    transition: 0.3s;
+    box-shadow: 0 0 7px 7px rgb(154, 150, 150); 
+}
+
+.services .cards .card h1{
+    font-size: 30px;
+    text-align: left ;
+    padding-top: 10px;
+}
+.services .cards .card p{
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.services .cards .card button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+
+         /* +++++====  Part--5 for Contact us ---===+++  for css  */
+
+         .contact{
+            height: 40rem;
+            width: 100%;
+            background-color: cadetblue;
+        }
+        .contact .con{
+            height: 3rem;
+            width: 100%;
+            text-align: center;
+        }
+        .contact .con2{
+            height: 37rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url(/CSS/bg\ image\ of\ con2.jpeg.jpg);
+            
+
+            color: white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .contact .con2 .first{
+            height: 30rem;
+            width: 25rem;
+          border-top: 2px solid white;
+          border-left: 2px solid white;
+            text-shadow:2px 2px 5px red ;
+        
+        }
+        .contact .con2 .first h1{
+            font-size: 30px;
+        }
+        .contact .con2 .first h1,h2,h3,iframe{
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+        .contact .con2 .second{
+            height: 30rem;
+            width: 25rem;
+            background-position: center;
+           border-right: 2px solid white;
+           border-bottom: 2px solid white;
+        }
+        .contact .con2 .second input,textarea,button{
+            padding: 10px;
+            margin-left: 20px;
+            margin-top: 25px;
+            width: 320px;
+            outline: none;
+            border: none;
+            border-bottom: 3px solid white;
+            background: none;
+            color: white;
+            font-size: 17px;
+        }
+        .contact .con2 .second textarea{
+            height: 6rem;
+        }
+        .contact .con2 .second button{
+            width: 21rem;
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        input::placeholder{
+            color: white;
+        }textarea::placeholder{
+            color: white;
+        }
+
+
+
+
+
+
+
+
+
+/* .Contact {
+    height: 40rem;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+.Contact .con{
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+
+}
+.Contact .con2{
+    height: 37rem;
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Contact .con2 .first{
+    height: 30rem;
+    width: 25rem;
+    background-color: plum;
+}
+.Contact .con2 .first h1,h2,h3, iframe{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.Contact .con2 .second{
+    height: 30rem;
+    width: 25rem;
+    background-color: rgb(249 0 249);
+}
+.Contact .con2 .second input, textarea, button{
+    padding: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 320px;
+}
+.Contact 
+
+ */
+
+
+
+/* .contact .section1{
+    height: 50px;
+    background-color: rgb(132, 209, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 20px auto;
+    /* padding: 10px; 
+    border-radius: 10px;
+    text-align: center;
+}
+.contact .third .icons{
+    margin-bottom: 20px;
+    margin-left: 1200px;
+    margin-top: -160px;
+    font-size: 30px;
+    /* padding-left: 30px; 
+    font-size: 50px;
+    justify-content: space-evenly;
+
+}
+.contact .third h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact .section1 h2{
+   
+    margin-bottom: 160px;
+    margin-left: 1400px;
+    margin-top: -160px;
+
+}
+
+.contact .third p {
+    color: white;
+    margin-left: 20px;
+    align-items: center;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: center;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    
+}
+
+/* textarea {
+    resize: none;
+} 
+.button {
+    margin-left: 700px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background-color: #91979e;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.contact .third{
+    height: 50vh;
+    background-color: rgb(0 47 52);
+    color: white;
+}
+.contact .third strong{
+    font-weight: 800;
+
+}
+.contact .third h1{
+    font-weight: 1200;
+    display: flex;
+    justify-content: center;
+
+}  */
+
+
+

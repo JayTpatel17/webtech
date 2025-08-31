@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Images/MyWebLogo.avif">
+
+    <title> Add To Cart Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6e88ca;
+        }
+        header {
+            background-color: #3c3333;
+            color: rgb(137, 210, 97);
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .item p {
+            margin: 0;
+        }
+        .item button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .item button:hover {
+            background-color: #45a049;
+        }
+        .cart-summary {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .cart-summary h2 {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Add To Cart Page</h1>
+    </header>
+
+    <div class="container">
+        <div class="item">
+            <p> Men shoes- ₹500</p>
+            <button onclick="addToCart('Mens shoes ', 500)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <p> Women shoes - ₹700</p>
+            <button onclick="addToCart('Womens shoes', 700)">Add to Cart</button>
+        </div>
+        <div class="item">
+            <p> kid's shoes - ₹600</p>
+            <button onclick="addToCart('kids shoes', 600)">Add to Cart</button>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <ul id="cart-items">
+                 Cart items will be dynamically added here 
+         </ul>
+            <p id="cart-total">Total: ₹0</p>
+        </div>
+    </div>
+    
+
+    <footer>
+        &copy; 2025 E-Commerce Website. All Rights Reserved.
+    </footer>
+
+    <script>
+        let cart = [];
+        let totalAmount = 0;
+        function addToCart(productName, productPrice) {
+            cart.push({ name: productName, price: productPrice });
+            totalAmount += productPrice;
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = '';
+
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - ₹${item.price}`;
+                cartItemsContainer.appendChild(li);
+            });
+
+            document.getElementById('cart-total').textContent = `Total: ₹${totalAmount}`;
+        }
+    </script>
+
+     <!-- <script>
+        let totalAmount1 = 0;
+
+        function addToCart(price) {
+            totalAmount += price;
+            document.getElementById('total').textContent = `Total: ₹${totalAmount}`;
+        }
+    </script>  -->
+    
+</body>
+</html> 
+
+
+ 
